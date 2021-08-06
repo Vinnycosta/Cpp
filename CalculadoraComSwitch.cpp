@@ -2,32 +2,32 @@
 using namespace std;
 
 int main(){
-    
+
     float num1, num2;
-    char operador;
+    char operation;
 
     cout << "Please, input a calculation: ";   /* Obtendo os dois números e a operação que será realizada entre eles */
     cin >> num1 >> operation >> num2;
 
     switch (operation){
-        case '+': 
+        case '+':
             system("clear");
-                cout << num1 << " " << operation << " " << num2 << "=" << num1 + num2;  /* Caso Soma */
+                cout << num1 << " " << operation << " " << num2 << " = " << num1 + num2;  /* Caso Soma */
                     break;
         case '-':
             system("clear");
-                cout << num1 << " " << operation << " " << num2 << "="<< num1 - num2; /* Caso Subtração */
+                cout << num1 << " " << operation << " " << num2 << " = "<< num1 - num2; /* Caso Subtração */
                     break;
 
-        case '*': 
+        case '*':
             system("clear");
-                cout << num1 << " " <<  operation << " " << num2 << "=" << num1 * num2; /* Caso Multiplicação */
+                cout << num1 << " " <<  operation << " " << num2 << " = " << num1 * num2; /* Caso Multiplicação */
                     break;
         break;
 
-          case '/': 
+          case '/':
             system("clear");
-                cout << num1 << " " << operation << " " << num2 << "=" << num1 / num2; /* Caso Divisão */
+                cout << num1 << " " << operation << " " << num2 << " = " << num1 / num2; /* Caso Divisão */
                     break;
         break;
 
@@ -36,7 +36,7 @@ int main(){
             num1int = int(num1) == num1;
             num2int = int(num2) == num2;    /* Caso module possui um algorítimo para verificar se o número inserido é inteiro, pois não
                                                se pode tirar module de dados númericos do tipo float, double, etc. */
-          
+
 
             if(num1int && num2int){
                 cout << num1 << " " << operation << " " << num2 << " = " << int(num1) % int(num2);
@@ -47,7 +47,8 @@ int main(){
                 cout << "Invalid operation";
             }
 
-        
+
         break;
 
     }
+}
