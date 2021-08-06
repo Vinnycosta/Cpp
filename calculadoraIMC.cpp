@@ -1,3 +1,5 @@
+/* Algoritmo de cálculo de IMC */
+
 #include <iostream>
 using namespace std;
 
